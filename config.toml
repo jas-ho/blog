@@ -1,5 +1,5 @@
-baseURL = "http://www.example.com"
-title = "Minimo"
+baseURL = "https://dazzling-bose-834fdc.netlify.com/"
+title = "blog"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
@@ -8,7 +8,7 @@ theme = "minimo"
 disqusShortname = ""
 googleAnalytics = ""
 
-Paginate = 5
+Paginate = 10
 preserveTaxonomyNames = true
 
 enableRobotsTXT = true # generate robots.txt
@@ -22,7 +22,7 @@ enableEmoji = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Minimalist theme for Hugo"
+description = "blog..."
 title404 = "Nothing's here!"
 
 [params.assets]
@@ -33,8 +33,8 @@ gopher = "" # used in 404 template ( Generator: https://gopherize.me )
 
 [params.copyright]
 prefix = ""
-holder = "MunifTanjim"
-startYear = "2017"
+holder = "Jason Hoelscher-Obermaier"
+startYear = "2018"
 suffix = ""
 
 [params.settings]
@@ -43,7 +43,7 @@ dateFormat = "2006, Jan 02"
 listDateFormat = "2006, Jan 02"
 archiveDateFormat = "Jan 02"
 hideEntryNavigation = ["page"] # boolean / array of sections
-showReadingTime = true
+showReadingTime = false
 taxonomyCloudShuffle = true
 accentColor = "#ffcd00"
 hideMainMenu = false
@@ -70,16 +70,16 @@ titleSeparator = "•"
 
 [params.social]
 codepen = "MunifTanjim"
-email = "contact@example.com"
-facebook = "MunifTanjim"
-github = "MunifTanjim"
-gitlab = "MunifTanjim"
-instagram = "MunifTanjim"
-linkedin = "muniftanjim"
-twitter = "MunifTanjim"
-telegram = "MunifTanjim"
-google_scholar = "qc6CJjYAAAAJ"
-youtube = "UCT-U0rNerYxItGcuoPX-WYA"
+email = "jason.hoelscherobermaier@gmail.com"
+facebook = ""
+github = "jas-ho"
+gitlab = ""
+instagram = ""
+linkedin = ""
+twitter = ""
+telegram = ""
+google_scholar = ""
+youtube = ""
 
 [params.comments]
 enable = false
@@ -90,9 +90,9 @@ apiEndpoint = "https://api.staticman.net/v2/entry"
 maxDepth = 2
 
 [params.comments.staticman.github]
-username = "MunifTanjim"
-repository = "minimo"
-branch = "master"
+username = ""
+repository = ""
+branch = ""
 
 # Utterances: https://utteranc.es
 [params.comments.utterances]
@@ -100,8 +100,8 @@ enable = false
 issueTerm = "pathname" # pathname / url / title
 
 [params.comments.utterances.github]
-username = "MunifTanjim"
-repository = "minimo"
+username = ""
+repository = ""
 
 [params.search]
 client = "" # algolia / fuse / lunr
@@ -112,9 +112,9 @@ indexName = ""
 searchApiKey = ""
 
 [taxonomies]
-author = "authors"
-category = "categories"
-series = "series"
+# author = "authors"
+# category = "categories"
+# series = "series"
 tag = "tags"
 
 [permalinks]
