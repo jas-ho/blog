@@ -15,6 +15,7 @@ enableRobotsTXT = true # generate robots.txt
 
 # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
 pygmentsCodefences = true
+pygmentsStyle = "tango"
 
 enableEmoji = true
 
@@ -50,7 +51,7 @@ accentColor = "#44ccff"
 hideMainMenu = false
 
 [params.sidebar]
-enable = false
+enable = true
 
 [params.widgets]
 homepage = ["recent_posts"]
@@ -104,9 +105,9 @@ indexName = ""
 searchApiKey = ""
 
 [taxonomies]
-author = "authors"
-category = "categories"
-series = "series"
+# author = "authors"
+# category = "categories"
+# series = "series"
 tag = "tags"
 
 [permalinks]
@@ -116,6 +117,12 @@ page = "/:slug/"
 name = "Repo"
 weight = -10
 identifier = "repository"
+url = "https://github.com/jas-ho/blog"
+
+[[menu.main]]
+name = "About"
+weight = -10
+identifier = "about"
 url = "https://github.com/jas-ho/blog"
 
 [blackfriday]
