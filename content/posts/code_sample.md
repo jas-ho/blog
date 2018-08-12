@@ -1,7 +1,6 @@
 ---
 title: "Code_sample"
 date: 2018-08-12T16:28:43+01:00
-draft: true
 ---
 
 blalbl
