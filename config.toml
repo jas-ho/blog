@@ -2,7 +2,7 @@ baseurl = "https://dazzling-bose-834fdc.netlify.com/"
 languageCode = "en"
 title = "blog"
 theme = "kiss"
-copyright = "&copy; <a href=\"https://github.com/ribice\">Emir Ribic</a> 2017"
+copyright = "&copy; <a href=\"https://github.com/jas-ho/blog\">Jason Hoelscher-Obermaier</a> 2018"
 disqusShortname = "shortname"
 googleAnalytics = ""
 # Number of posts per page
