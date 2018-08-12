@@ -5,12 +5,12 @@ date: 2018-08-12T16:28:43+01:00
 
 blalbl
 
-{{< highlight python "linenos=table,hl_lines=8 15-17,linenostart=199" >}}
+{{< highlight python "hl_lines=8 15-17,linenostart=1" >}}
 	df = pd.DataFrame(dict('a': range(10)))
 {{< / highlight >}}
 
 
-{{< highlight bash >}}
+{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=1">}}
 # quicker check for duplicates
 # function to describe content of a file (for use with checknamed)
 describe(){
