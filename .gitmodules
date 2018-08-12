@@ -13,3 +13,6 @@
 [submodule "themes/cocoa"]
 	path = themes/cocoa
 	url = git@github.com:nishanths/cocoa-hugo-theme.git
+[submodule "themes/engimo"]
+	path = themes/engimo
+	url = https://github.com/achary/engimo

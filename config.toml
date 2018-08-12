@@ -1,97 +1,129 @@
-Paginate = 10
-baseURL = "https://dazzling-bose-834fdc.netlify.com/"
-copyright = ""
-defaultContentLanguage = "en"
-disqusShortname = ""
-enableEmoji = true
-enableRobotsTXT = true
-googleAnalytics = ""
-preserveTaxonomyNames = true
-pygmentsCodefences = true
-theme = "minimo"
+baseURL = "https://dazzling-bose-834fdc.netlify.com"
 title = "blog"
-[blackfriday]
-hrefTargetBlank = true
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
-[[menu.main]]
-identifier = "repository"
-name = "Repo"
-url = "https://github.com/MunifTanjim/minimo"
-weight = -10
+# for smart copyright line, leave this blank and check [params.copyright]
+copyright = ""
+
+theme = "engimo"
+
+disqusShortname = ""
+googleAnalytics = ""
+
+Paginate = 5
+preserveTaxonomyNames = true
+
+enableRobotsTXT = true # generate robots.txt
+
+# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
+pygmentsCodefences = true
+
+enableEmoji = true
+
+# Missing translations will default to this content language
+defaultContentLanguage = "en"
+
+[params.info]
+description = "blog about ...."
+title404 = "Nothing's here!"
+
 [params.assets]
+
+favicon = "favicon.ico"
 customCSS = ["css/custom.css"]
 customJS = ["js/custom.js"]
-favicon = "favicon.ico"
-gopher = ""
-[params.comments]
-enable = false
-[params.comments.staticman]
-apiEndpoint = "https://api.staticman.net/v2/entry"
-enable = true
-maxDepth = 2
-[params.comments.staticman.github]
-branch = ""
-repository = ""
-username = ""
-[params.comments.utterances]
-enable = false
-issueTerm = "pathname"
-[params.comments.utterances.github]
-repository = ""
-username = ""
+gopher = "" # used in 404 template ( Generator: https://gopherize.me )
+
 [params.copyright]
-holder = "Jason Hoelscher-Obermaier"
 prefix = ""
-startYear = "2018"
+holder = "Jason Hoelscher-Obermaier"
+startYear = "2017"
 suffix = ""
-[params.info]
-description = "blog..."
-title404 = "Nothing's here!"
+
+[params.settings]
+# date & time format: https://golang.org/pkg/time/
+dateFormat = "2006, Jan 02"
+listDateFormat = "2006, Jan 02"
+archiveDateFormat = "Jan 02"
+hideEntryNavigation = ["page"] # boolean / array of sections
+showReadingTime = true
+taxonomyCloudShuffle = false
+accentColor = "#44ccff"
+hideMainMenu = false
+
+[params.sidebar]
+enable = false
+
+[params.widgets]
+homepage = ["recent_posts"]
+sidebar = ["about","search","sidebar_menu","taxonomy_cloud"]
+footer = ["social_menu"]
+
 [params.opengraph.facebook]
-admins = []
+admins = [] # array of Facebook IDs
 appID = ""
 pageID = ""
+
 [params.opengraph.twitter]
-page = ""
+page = "" # Twitter page username
+
+[params.seo]
+# Title Separator: - – — · • * ⋆ | ~ « » < >
+titleSeparator = "•"
+
+[params.social]
+email = "jason.hoelscherobermaier@gmail.com"
+github = "jas-ho"
+
+[params.comments]
+enable = false
+
+[params.comments.staticman]
+enable = true
+apiEndpoint = "https://api.staticman.net/v2/entry"
+maxDepth = 2
+
+[params.comments.staticman.github]
+username = "jas-ho"
+repository = "blog"
+branch = "master"
+
+# Utterances: https://utteranc.es
+[params.comments.utterances]
+enable = false
+issueTerm = "pathname" # pathname / url / title
+
+[params.comments.utterances.github]
+username = "jas-ho"
+repository = "blog"
+
 [params.search]
-client = ""
+client = "fuse" # algolia / fuse / lunr
+
 [params.search.algolia]
 appId = ""
 indexName = ""
 searchApiKey = ""
-[params.seo]
-titleSeparator = "•"
-[params.settings]
-accentColor = "#ffcd00"
-archiveDateFormat = "Jan 02"
-dateFormat = "2006, Jan 02"
-hideEntryNavigation = ["page"]
-hideMainMenu = false
-listDateFormat = "2006, Jan 02"
-showReadingTime = false
-taxonomyCloudShuffle = true
-[params.sidebar]
-enable = true
-[params.social]
-codepen = ""
-email = "jason.hoelscherobermaier@gmail.com"
-facebook = ""
-github = "jas-ho"
-gitlab = ""
-google_scholar = ""
-instagram = ""
-linkedin = ""
-telegram = ""
-twitter = ""
-youtube = ""
-[params.widgets]
-footer = ["social_menu"]
-homepage = ["recent_posts"]
-sidebar = ["about", "search", "sidebar_menu", "taxonomy_cloud"]
+
+[taxonomies]
+author = "authors"
+category = "categories"
+series = "series"
+tag = "tags"
+
 [permalinks]
 page = "/:slug/"
-[taxonomies]
-tag = "tags"
+
+[[menu.main]]
+name = "Repo"
+weight = -10
+identifier = "repository"
+url = "https://github.com/jas-ho/blog"
+
+[blackfriday]
+hrefTargetBlank = true
+
+[languages]
+# edit this block for your own language
+[languages.en]
+lang = "en"
+languageName = "English"
+weight = 1
