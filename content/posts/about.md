@@ -1,15 +1,17 @@
 ---
-title: "About"
+title: "About this blog"
 date: 2018-08-12T16:05:10+01:00
 tags: 
 - about
 ---
-In this blog, I'll attempt to share helpful tips and ressources related to:
+In these pages, I'd like to share tips, ideas and ressources related to:
 
 - software engineering
 - machine learning
 - natural language processing
 - data science
-- and related fields
+- ...and related fields
 
 May it be useful!
+
+<!-- You can search through the content [here]({{< relref "/page/search.md" >}}) -->

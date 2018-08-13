@@ -1,5 +1,5 @@
 baseURL = "https://dazzling-bose-834fdc.netlify.com"
-title = "blog"
+title = "snippets"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
@@ -23,7 +23,7 @@ enableEmoji = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "..."
+description = "on programming, machine learning, data science and related stuff"
 title404 = "Nothing's here!"
 
 [params.assets]
@@ -64,7 +64,7 @@ appID = ""
 pageID = ""
 
 [params.opengraph.twitter]
-page = "" # Twitter page username
+page = "JasonObermaier" # Twitter page username
 
 [params.seo]
 # Title Separator: - – — · • * ⋆ | ~ « » < >
@@ -73,6 +73,7 @@ titleSeparator = "•"
 [params.social]
 email = "jason.hoelscherobermaier@gmail.com"
 github = "jas-ho"
+twitter = "JasonObermaier"
 
 [params.comments]
 enable = false
@@ -115,19 +116,19 @@ page = "/:slug/"
 
 [[menu.main]]
 name = "Home"
-weight = -10
+weight = -100
 identifier = "home"
-url = ""
+url = "/"
 
 [[menu.main]]
 name = "Tags"
 weight = -10
 identifier = "tags"
-url = "https://github.com/jas-ho/blog"
+url = "/tags/"
 
 [[menu.main]]
 name = "Repo"
-weight = -10
+weight = -1
 identifier = "repository"
 url = "https://github.com/jas-ho/blog"
 
@@ -135,7 +136,7 @@ url = "https://github.com/jas-ho/blog"
 name = "About"
 weight = -10
 identifier = "about"
-url = "https://github.com/jas-ho/blog"
+url = "/about/"
 
 [blackfriday]
 hrefTargetBlank = true
