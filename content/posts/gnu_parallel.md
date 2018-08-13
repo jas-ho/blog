@@ -1,7 +1,6 @@
 ---
 title: "gnu parallel: parallelize bash"
 date: 2018-08-13T11:42:04+01:00
-draft: true
 tags:
 - bash
 ---
