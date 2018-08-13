@@ -126,17 +126,17 @@ weight = -10
 identifier = "tags"
 url = "/tags/"
 
-[[menu.main]]
-name = "Repo"
-weight = -1
-identifier = "repository"
-url = "https://github.com/jas-ho/blog"
+# [[menu.main]]
+# name = "Repo"
+# weight = -1
+# identifier = "repository"
+# url = "https://github.com/jas-ho/blog"
 
 [[menu.main]]
 name = "About"
 weight = -10
 identifier = "about"
-url = "/about/"
+url = "/posts/about/"
 
 [blackfriday]
 hrefTargetBlank = true

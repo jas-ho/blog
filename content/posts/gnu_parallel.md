@@ -2,6 +2,8 @@
 title: "gnu parallel: parallelize bash"
 date: 2018-08-13T11:42:04+01:00
 draft: true
+tags:
+- bash
 ---
 
 Have you encountered this situation? You need to extract some information from a file ... and then do the same thing for a ton of files.
