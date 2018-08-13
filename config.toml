@@ -58,6 +58,12 @@ homepage = ["recent_posts"]
 sidebar = ["sidebar_menu"] #,"about","search"
 footer = ["social_menu"]
 
+# Recent Posts Widget config
+[recent_posts]
+title = ""                            # default: "Recent Posts"
+length = 1                            # default: 5
+excludeTypes = ["page"]               # default: ["page"]
+
 [params.opengraph.facebook]
 admins = [] # array of Facebook IDs
 appID = ""
