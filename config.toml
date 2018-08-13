@@ -54,7 +54,7 @@ hideMainMenu = false
 enable = false
 
 [params.widgets]
-homepage = ["recent_posts", "taxonomy_cloud", "search"]
+homepage = ["recent_posts"]
 sidebar = ["sidebar_menu"] #,"about","search"
 footer = ["social_menu"]
 
@@ -100,6 +100,9 @@ repository = "blog"
 [params.search]
 client = "fuse" # algolia / fuse / lunr
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [params.search.algolia]
 appId = ""
 indexName = ""
@@ -126,17 +129,17 @@ weight = -10
 identifier = "tags"
 url = "/tags/"
 
-# [[menu.main]]
-# name = "Repo"
-# weight = -1
-# identifier = "repository"
-# url = "https://github.com/jas-ho/blog"
-
 [[menu.main]]
 name = "About"
 weight = -10
 identifier = "about"
 url = "/posts/about/"
+
+[[menu.main]]
+name = "Search"
+weight = -5
+identifier = "search"
+url = "/search"
 
 [blackfriday]
 hrefTargetBlank = true
