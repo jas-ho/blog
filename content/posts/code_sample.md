@@ -5,14 +5,7 @@ tags:
 - bash
 ---
 
-blalbl
-
-{{< highlight python "hl_lines=8 15-17,linenostart=1" >}}
-	df = pd.DataFrame(dict('a': range(10)))
-{{< / highlight >}}
-
-
-{{< highlight bash "linenos=table,hl_lines=8 15-17,linenostart=1">}}
+{{< highlight bash >}}
 # quicker check for duplicates
 # function to describe content of a file (for use with checknamed)
 describe(){
@@ -36,11 +29,10 @@ describe(){
 }
 export -f describe
 
-# find all paths (both files and directories) matching a certain pattern, describe their contents using the custom 'describe' function, and merge on common descriptions
+# 1) find all paths (both files and directories) matching a certain pattern
+# 2) describe their contents using the custom 'describe' function
+# and 3) merge on common descriptions
 checknamed(){
-    # awk -F'[[:space:]][[:space:]]' \
-    # 'NF>1{a[$1] = a[$1]"\n"$2};END{for(i in a){print i""a[i] "\n"}}' \
-    # perl keeps order
     perl -F'[[:space:]][[:space:]]' -anle 'next if /^$/;$h{$F[0]} = $h{$F[0]}."\n ".$F[1];
         END{print $_,$h{$_},"\n" for sort keys %h}' \
     <(finamed "$@" | parallel describe | sort)

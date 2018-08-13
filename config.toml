@@ -23,7 +23,7 @@ enableEmoji = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "on programming, machine learning, data science and related stuff"
+description = "on programming, machine learning, data science and related matters"
 title404 = "Nothing's here!"
 
 [params.assets]

@@ -7,7 +7,7 @@ tags:
 
 Have you encountered this situation? You need to extract some information from a file ... and then do the same thing for a ton of files.
 
-In this post, I'll show a simple example task and explain how you can use gnu parallel to very conveniently achieve your task for many files once you've figured out how to do it for a single file.
+In this post, I'll show a simple example task and explain how you can use [gnu parallel](https://www.gnu.org/software/parallel/) to very conveniently achieve your task for many files once you've figured out how to do it for a single file.
 
 # example task: extract date from text file
 Say the file is called gnu_parallel.md and looks like that
@@ -42,7 +42,7 @@ $ find -name *md
 {{< / highlight >}}
 `find -name *md` finds all markdown-files in or below your current working directory.
 
-I'd like to apply the command we had above to every single file in the list. gnu parallel allows us to do exactly that:
+gnu parallel allows us to apply the above command to every single file in the list returned by `find`:
 {{< highlight bash >}}
 $ find -name *md | parallel "grep 'date: ' {} | head -n 1 | cut -d ' ' -f 2"
 2018-08-12T16:28:43+01:00
