@@ -1,5 +1,5 @@
 ---
-title: "Code_sample"
+title: "Sample post with code highlights"
 date: 2018-08-12T16:28:43+01:00
 tags: 
 - bash
