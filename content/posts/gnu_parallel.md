@@ -5,9 +5,9 @@ tags:
 - bash
 ---
 
-Have you encountered this situation? You need to extract some information from a file ... and then do the same thing for a ton of files.
+Do you know this? You need to extract the same information from many different files, or apply a transformation to many different files or calculate some function for many different inputs.
 
-In this post, I'll show a simple example task and explain how you can use [gnu parallel](https://www.gnu.org/software/parallel/) to very conveniently achieve your task for many files once you've figured out how to do it for a single file.
+The good news: **If you know how to use *bash* to get what you want for a *single input file* (or string, etc), you can use [gnu parallel](https://www.gnu.org/software/parallel/) to efficiently get what you want for *any number of input files*.** Let me explain how this works.
 
 # example task: extract date from text file
 Say the file is called gnu_parallel.md and looks like that
