@@ -9,7 +9,7 @@ Do you know this? You need to extract the same information from many different f
 
 The good news:
 
-> If you can use **bash** to get what you want **for a single input file** (or string, etc), you can use [**gnu parallel**](https://www.gnu.org/software/parallel/) to efficiently get what you want **for any number of input files.** 
+> If you can use **bash** to get what you want **for a single input file**, you can use [**gnu parallel**](https://www.gnu.org/software/parallel/) to get what you want **for any number of input files.** It allows you to go from 'one' to 'many' in a straightforward and efficient way.
 
 Let me explain how this works.
 
@@ -31,10 +31,10 @@ To extract the date you could do the following in bash:
 {{< / highlight >}}
 
 - `grep` finds all lines containing 'date: '.
-- `head -n 1` retains only the first line.
-- `cut -d ' ' -f 2` 
-	- splits the output on a single white-space (`-d ' '`) and then
-	- retains only the second field (`-f 2`)
+- `head -n 1` retains only the first line (in case there are more lines starting with "date: ")
+- `cut -d ' ' -f 2` splits the output on a single white-space (`-d ' '`) and retains only the second field (`-f 2`)
+
+Head over to [explainshell.com](https://explainshell.com/explain?cmd=grep+%27date%3A+%27+gnu_parallel.md+%7C+head+-n+1+%7C+cut+-d+%27+%27+-f+2+) for more information.
 
 # apply it to many files
 Now assume you have many files from which you'd like to extract the date.
