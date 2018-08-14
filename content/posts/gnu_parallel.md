@@ -30,8 +30,8 @@ To extract the date you could do the following in bash:
 	2018-08-13T11:42:04+01:00
 {{< / highlight >}}
 
-- `grep` finds all lines containing 'date: '.
-- `head -n 1` retains only the first line (in case there are more lines starting with "date: ")
+- `grep` finds all lines in gnu_parallel.md containing 'date: '.
+- `head -n 1` retains only the first line (in case there are more lines starting with 'date: ')
 - `cut -d ' ' -f 2` splits the output on a single white-space (`-d ' '`) and retains only the second field (`-f 2`)
 
 Head over to [explainshell.com](https://explainshell.com/explain?cmd=grep+%27date%3A+%27+gnu_parallel.md+%7C+head+-n+1+%7C+cut+-d+%27+%27+-f+2+) for more information.
