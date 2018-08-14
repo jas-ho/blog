@@ -7,7 +7,11 @@ tags:
 
 Do you know this? You need to extract the same information from many different files, or apply a transformation to many different files or calculate some function for many different inputs.
 
-The good news: **If you know how to use *bash* to get what you want for a *single input file* (or string, etc), you can use [gnu parallel](https://www.gnu.org/software/parallel/) to efficiently get what you want for *any number of input files*.** Let me explain how this works.
+The good news:
+
+> If you can use **bash** to get what you want **for a single input file** (or string, etc), you can use [**gnu parallel**](https://www.gnu.org/software/parallel/) to efficiently get what you want **for any number of input files.** 
+
+Let me explain how this works.
 
 # example task: extract date from text file
 Say the file is called gnu_parallel.md and looks like that
