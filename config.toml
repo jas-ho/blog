@@ -124,19 +124,19 @@ tag = "tags"
 page = "/:slug/"
 
 [[menu.main]]
-name = "Home"
+name = "home"
 weight = -100
 identifier = "home"
 url = "/"
 
 [[menu.main]]
-name = "Tags"
+name = "tags"
 weight = -10
 identifier = "tags"
 url = "/tags/"
 
 [[menu.main]]
-name = "About"
+name = "about"
 weight = -10
 identifier = "about"
 url = "/posts/about/"
@@ -154,5 +154,5 @@ hrefTargetBlank = true
 # edit this block for your own language
 [languages.en]
 lang = "en"
-languageName = "English"
+languageName = "english"
 weight = 1
