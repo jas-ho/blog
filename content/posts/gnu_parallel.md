@@ -55,9 +55,15 @@ $ find -name *md | parallel "grep 'date: ' {} | head -n 1 | cut -d ' ' -f 2"
 {{< / highlight >}}
 You can think of this as follows:
 {{< highlight bash >}}
-outputs_a_list | parallel "command {input_from_list}"
+command_yielding_a_list | parallel "command_operating_on_single_item {}"
 {{< / highlight >}}
-`parallel` will run `command item` on every single `item` from the list produced by the command `outputs_a_list`.
+which corresponds to the following python-style pseudocode:
+{{< highlight python >}}
+items = command_yielding_a_list()
+for item in items:
+    command_operating_on_single_item(item)
+{{< / highlight >}}
+...only that parallel actually operates in parallel rather than serially ;)
 
 # Summary
 gnu parallel is an extremely convenient and versatile tool which allows you to
