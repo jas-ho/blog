@@ -1,9 +1,9 @@
-baseURL = "https://dazzling-bose-834fdc.netlify.com"
+btaseURL = "https://dazzling-bose-834fdc.netlify.com"
 title = "snippets"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
-theme = "engimo"
+theme = "minimo"
 
 disqusShortname = ""
 googleAnalytics = ""

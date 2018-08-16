@@ -14,4 +14,4 @@ In these pages, I'd like to share tips, ideas and ressources related to:
 
 May it be useful!
 
-This site is generated using [hugo](https://gohugo.io/) with the [engimo theme](https://themes.gohugo.io/theme/engimo/). You can find the [source code on github](https://github.com/jas-ho/blog). The site is hosted by [netlify](https://www.netlify.com/).
+This site is generated using [hugo](https://gohugo.io/) with the [minimo theme](https://themes.gohugo.io/minimo/). You can find the [source code on github](https://github.com/jas-ho/blog). The site is hosted by [netlify](https://www.netlify.com/).
